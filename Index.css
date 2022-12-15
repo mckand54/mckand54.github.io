@@ -1,0 +1,52 @@
+body{background-color: #0B0B0B }
+header{
+	text-align: center;
+	border-style: solid;
+	border-color: #0B0B0B;
+	border-width: 1.5px;
+	}
+.head{
+	width: 75%;
+	height: 45%;
+	border-style: solid;
+	border-color: #0B0B0B;
+	border-width: 1.5px;
+}
+nav{
+	text-align: center;
+	margin: 20;
+	}
+	.button{
+		background-color: #0B0B0B ;
+		color: ffffff;
+		padding: 15px 32px;
+		text-align: center;
+		displpay: inline-block;
+		font-size: 16px;
+		margin: 15px 20px;
+		cursor: pointer;
+		border-style: solid;
+		border-color: white;
+		border-width: 1px;
+		border-radius: 5px;
+	}
+sec{
+	text-align: center;
+}
+.sec{
+	margin-left: 40%;
+	width: 275px;
+	height: 350px;
+	border-style: solid;
+	border-color: white;
+	border-width: 1.5px;
+}
+pre{
+	color: #FDFAF9;
+}
+.intro{
+	margin-left: 38%;
+	border-style: solid;
+	border-color: white;
+	border-width: 1.5px;
+}

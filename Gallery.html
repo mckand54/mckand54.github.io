@@ -1,0 +1,101 @@
+<html>
+<head>
+<title> Gallery </title>
+<link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+<header>
+<img src= "images/gallery.jpg" class= "head">
+</Header>
+<nav>
+<button class= "button"><a href="index.html">Home</a></button>
+<button class= "button"><a href="profile.html"> Profile </a></button>
+<button class= "button"> Gallery </button>
+<button class= "button"><a href="sign_up.html"> Forms </a></button>
+</nav>
+<sec>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <center><img src="images/slavery.jpg" style="width:60%"></center>
+    <div class="text">Untold Bible History</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <center><img src="images/heaven_and_hell.jpg" style="width:60%"></center>
+    <div class="text">Untold Heaven and Hell</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <center><img src="images/the_sabbath_and_sunday.jpg" style="width:60%"></center>
+    <div class="text">Untold Sabbath and Sunday</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <center><img src="images/covenants.jpg" style="width:60%"></center>
+    <div class="text">Covenants</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <center><img src="images/great_tribulation.jpg" style="width:60%"></center>
+    <div class="text">End Times</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <center><img src="images/dietary_law.jpg" style="width: 60%"></center>
+    <div class="text">How to Eat</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</sec>
+</body>
+</html>
